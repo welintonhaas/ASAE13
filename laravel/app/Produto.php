@@ -13,5 +13,4 @@ class Produto extends Model
     {
         return $this->belongsTo('App\Cliente', 'id_cliente', 'id');
     }
-
 }
