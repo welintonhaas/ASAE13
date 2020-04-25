@@ -9,7 +9,7 @@ class Produto extends Model
     protected $table = 'produtos';
     protected $primarykey = 'id';
 
-    function cliente()
+    function clientes()
     {
         return $this->belongsTo('App\Cliente', 'id_cliente', 'id');
     }
