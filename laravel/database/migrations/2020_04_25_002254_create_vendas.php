@@ -17,7 +17,8 @@ class CreateVendas extends Migration
             $table->id();
             $table->date('data');
             $table->float('valor_total');
-            $table->id('id_cliente');
+            $table->unsignedBigInteger('id_cliente');
+            $table->foreign('id_cliente')->references('id')->on('clientes');
         });
     }
 
